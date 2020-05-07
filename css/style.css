@@ -66,7 +66,7 @@ html {
 .mb-medium {
   margin-bottom: 4rem; }
 
-.m-small {
+.mb-small {
   margin: 2rem; }
 
 .up-button {
@@ -212,6 +212,46 @@ html {
   text-align: center;
   font-size: 1.4rem; }
 
+.grid-row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .grid-row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .grid-row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .grid-row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .grid-row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid-row [class^="col-"] {
+    float: left; }
+    .grid-row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .grid-row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .grid-row [class^="col-"] {
+        width: 100% !important; } }
+  .grid-row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .grid-row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .grid-row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .grid-row .col-2-of-3 {
+    width: calc( 2 * (100% - 2 * 6rem) / 3 + 6rem); }
+  .grid-row .col-2-of-4 {
+    width: calc( 2 * (100% - 3 * 6rem) / 4 + 6rem); }
+  .grid-row .col-3-of-4 {
+    width: calc( 3 * (100% - 3 * 6rem) / 4 + (2 * 6rem)); }
+
 .header {
   background-color: #303238;
   height: auto;
@@ -284,6 +324,18 @@ html {
     color: #fff;
     font-weight: 500;
     text-decoration: none; }
+
+.portfolio {
+  background-color: #dddddd;
+  padding: 5rem; }
+  .portfolio__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+  .portfolio__title {
+    text-align: center;
+    text-transform: uppercase; }
 
 .section-heading {
   font-size: 4rem;
