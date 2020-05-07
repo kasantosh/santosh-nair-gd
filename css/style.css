@@ -153,12 +153,14 @@ html {
         width: 100%;
         left: 50%; } }
   .banner__caption {
+    font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 4.5rem;
     color: #303238;
     animation: moveInLeft;
     animation-duration: 1s; }
   .banner__designation {
     font-size: 2rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
     animation: moveInRight;
     animation-duration: 1s; }
   .banner__tag {
@@ -256,7 +258,8 @@ html {
   background-color: #303238;
   height: auto;
   color: #fff;
-  width: 100%; }
+  padding: 0 4rem;
+  width: auto; }
   .header__logo {
     width: 3.5rem; }
   .header__section {
@@ -338,6 +341,7 @@ html {
     text-transform: uppercase; }
 
 .section-heading {
+  font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 4rem;
   color: #303238;
   transition: all 0.3s; }
